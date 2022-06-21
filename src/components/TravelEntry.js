@@ -17,6 +17,7 @@ export default function TravelEntry(props) {
 						<img
 							src={locationMarker}
 							className="location-marker"
+							alt="location-marker"
 						></img>
 						<h5 className="location">{props.entry.location}</h5>
 						<a
@@ -27,9 +28,11 @@ export default function TravelEntry(props) {
 						</a>
 					</div>
 					<h3 className="title">{props.entry.title}</h3>
-					<h4 className="startEndDate">
-						{props.entry.startDate} - {props.entry.endDate}
-					</h4>
+					{props.entry.startDate && (
+						<h4 className="startEndDate">
+							{props.entry.startDate}
+						</h4>
+					)}
 					<p className="description">{props.entry.description}</p>
 				</div>
 			</div>
