@@ -1,11 +1,12 @@
 import React from "react";
 import Divider from "./Divider";
+import locationMarker from "../img/location-marker1-5x.png";
 // import mountFuji from "../img/mountFuji.png";
 
 export default function TravelEntry(props) {
 	return (
 		<div className="travelEntry flex-col">
-			<div className="flex-row">
+			<div className="wrapper__entry flex-row">
 				<img
 					src={`../img/${props.entry.imageUrl}`}
 					alt=""
@@ -13,6 +14,10 @@ export default function TravelEntry(props) {
 				/>
 				<div className="flex-col">
 					<div className="wrapper__location flex-row">
+						<img
+							src={locationMarker}
+							className="location-marker"
+						></img>
 						<h5 className="location">{props.entry.location}</h5>
 						<a
 							href={`${props.entry.googleMapsUrl}`}
