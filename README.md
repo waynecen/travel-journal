@@ -1,4 +1,4 @@
-# Travel-Journal
+# Travel Journal
 
 A travel journal displaying entries location, date, and description of places I've visited. Data is passed in an array of objects, using React and props to display each entry.
 
