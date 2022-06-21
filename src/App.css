@@ -5,14 +5,24 @@
 
 body {
 	font-family: "Inter", sans-serif;
-
+	display: flex;
+	justify-content: center;
 }
 
 .App {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	width:550px;
+	flex-direction: column;
 	border-radius: 8px;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
 }
 
 /* Header */
@@ -24,6 +34,7 @@ body {
 	height: 39px;
 	width: 550px;
 	padding-top: 16px;
+	margin-bottom: 48px;
 }
 
 .header img {
@@ -34,4 +45,59 @@ body {
 
 .header h3 {
 	font-weight: 400;
+}
+
+/* Journal Entry */
+.entry--img {
+	margin-right: 20px;
+	width: 125px;
+	height: 168px;
+}
+
+.travelEntry {
+	color: #2B283A;
+	margin-top: 16px;
+	margin-left: 32px;
+	margin-bottom: 16px;
+}
+
+.wrapper__location {
+	margin-bottom: 8px;
+}
+
+.location {
+	font-size: 0.9rem;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin-right: 12px;
+}
+
+.link__googleMaps {
+	font-size: 0.9rem;
+	color: #918E9B;
+	text-decoration-style: none;
+}
+
+.title {
+	font-size: 1.55rem;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+
+.startEndDate {
+	font-size: 0.9rem;
+	margin-bottom: 8px; 
+}
+
+.description {
+	font-size: 0.9rem;
+	font-weight: 400;
+	max-width: 330px;
+	margin-bottom: 16px;
+}
+
+/* Divider */
+.divider {
+	border-bottom: 1px solid #ececec;
+	margin-bottom: 10px;
 }
